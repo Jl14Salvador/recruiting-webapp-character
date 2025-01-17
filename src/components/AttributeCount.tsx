@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import { AttributeContext } from "../context/attributeContext";
-import { Attributes } from "../types";
+import { AttributesContext } from "../types";
 
 interface AttributeCountProps {
-  attribute: keyof Attributes;
+  attribute: keyof AttributesContext;
 }
 
 function AttributeCount({ attribute }: AttributeCountProps) {

@@ -1,4 +1,4 @@
-export type Attributes = {
+export type AttributesContext = {
   Strength: number;
   Dexterity: number;
   Constitution: number;
@@ -11,5 +11,5 @@ export type Class = "Barbarian" | "Wizard" | "Bard";
 
 export type AttributeAction = {
   type: "increment" | "decrement";
-  selectedAttribute: keyof Attributes;
+  selectedAttribute: keyof AttributesContext;
 };

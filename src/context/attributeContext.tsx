@@ -1,9 +1,9 @@
 import { createContext, Dispatch, useReducer } from "react";
-import { Attributes, AttributeAction } from "../types";
+import { AttributesContext, AttributeAction } from "../types";
 import { attributeReducer } from "../reducers/attributeReducer";
 
 export const AttributeContext = createContext<{
-  attributes: Attributes;
+  attributes: AttributesContext;
   dispatch: Dispatch<AttributeAction>;
 }>({
   attributes: {

@@ -1,7 +1,7 @@
-import { Attributes, AttributeAction } from "../types";
+import { AttributesContext, AttributeAction } from "../types";
 
 export const attributeReducer = (
-  state: Attributes,
+  state: AttributesContext,
   attribute: AttributeAction
 ) => {
   const { type, selectedAttribute } = attribute;
