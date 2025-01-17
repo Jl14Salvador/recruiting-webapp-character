@@ -3,6 +3,7 @@ import { SKILL_LIST } from "./consts";
 import ClassList from "./components/ClassList";
 import AttributeProvider from "./context/attributeContext";
 import AttributeCountList from "./components/AttributeCountList";
+import SkillsList from "./components/SkillsList";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <div className="content-container">
           <AttributeCountList />
           <ClassList />
+          <SkillsList />
         </div>
       </div>
     </AttributeProvider>
