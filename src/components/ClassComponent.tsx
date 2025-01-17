@@ -37,7 +37,7 @@ function ClassComponent({
         <div className="modal-overlay">
           <div className="modal">
             <div className="modal-content">
-              <h4>Minimum Requirements:</h4>
+              <h4>Minimum Requirements for {className}:</h4>
               {Object.entries(minimumAttributesRequired).map(
                 ([attr, value]) => (
                   <div key={attr}>
