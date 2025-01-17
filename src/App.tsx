@@ -26,7 +26,7 @@ function App() {
 
           <div className="content-box">
             <h2>Classes</h2>
-            <div className="ClassList">
+            <div id="ClassList">
               {Object.entries(CLASS_LIST).map(
                 ([className, minimumAttributesRequired]) => {
                   return (

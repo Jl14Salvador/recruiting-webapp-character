@@ -102,3 +102,8 @@
 .close-button:hover {
   background-color: #e0e0e0;
 }
+
+.modifier {
+  margin-left: 8px;
+  color: #7f8384;
+}

@@ -14,8 +14,11 @@ function AttributeCount({ attribute }: AttributeCountProps) {
       <span>
         {attribute} : {attributes[attribute]}
       </span>
+      <span className="modifier">
+        Modifier: {Math.floor((attributes[attribute] - 10) / 2)}
+      </span>
       <button
-        style={{ marginLeft: "4px" }}
+        style={{ marginLeft: "6px" }}
         onClick={() =>
           dispatch({ type: "increment", selectedAttribute: attribute })
         }
